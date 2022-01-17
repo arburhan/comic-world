@@ -48,6 +48,7 @@ main{
     margin: 0 auto;
     justify-content: center;
     display: grid;
+    grid-template-columns: 1fr;
 }
 header{
     background-image: url(images/cloud.png);
@@ -367,7 +368,7 @@ Mobile
 Responsive for tablet
 ---------------------
  */
- @media only screen and (min-width:689px) and (max-width:992px){
+ @media only screen and (min-width:689px) and (max-width:1024px){
      header{
          width: 100%;
      }
