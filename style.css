@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    margin: 20px 30px;
+}
+
+/* Common-section */
+
+.button{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF008E;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 4px solid #FF008E;
+}
+.button:hover {
+    color: white;
+    background-color: #d52828;
+    border: 4px solid #d52828;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+.title-name{
+    text-align: center;
+}
+.title-name h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 50px 5px 10px 10px;
+    border-bottom: 3px solid #FF008E;
+}
+
+/* header Section */
+
+header{
+    background-image: url(images/cloud.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: overlay;
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    padding: 15px 0px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+ul li :hover{
+    color: #FF008E;
+    transition: .5s;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+i.fas.fa-bars {
+    display: none;
+}
+.top-part{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 20px 30px;
+}
+.top-left-part, .top-right-part{
+    width: 600px;
+}
+.focus{
+    color: #FF008E;
+}
+.top-left-part h1{
+    font-size: 50px;
+}
+.top-left-part p{
+    font-size: 18px;
+}
+.top-right-part img{
+    width: 100%;
+}
+
+
+
+/* Feature Part */
+
+.f-bg-photo{
+    background-image: url(images/oggy-perso-oggy-and-the-cockroaches-oggy-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 500px;
+}
+.feature-cards{
+    background-image: url(images/ben.jfif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 380px;
+}
+.feature-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 50px;
+    justify-content: center;
+    margin: 30px 20px;
+}
+.card{
+    text-align: right;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 29%);
+}
+.fasfeature{
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    padding-top: 18px;
+    color: white;
+    font-size: 30px;
+    background-color: #FF008E;
+    border-radius: 50%;
+}
+.card h2{
+    padding: 10px 0px;
+}
+.card p{
+    padding-bottom: 10px;
+}
+.read-more{
+    text-decoration: none;
+    color: #FF008E;
+}
+
+/* About Section */
+
+.about-part{
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    align-items: center;
+}
+.about-photo{
+    text-align: center;
+}
+.about-photo img{
+    width: 75%;
+    border-radius: 10px;
+}
+.about-text h2{
+    font-size: 40px;
+    padding: 10px 0px;
+}
+
+/* gallery section */
+.images-cards{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 30px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    
+}
+.img-card{
+    width: 300px;
+    height: 200px;
+    border: 4px solid #FF008E;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-card:hover >.g-images {
+    transform: scale(1.2);
+    transition: .3s linear;
+}
+.img-card img{
+    height: 100%;
+    width: 100%;
+}
+.more{
+    text-align: right;
+    padding: 10px 153px;
+}
+.see-more{
+    text-decoration: none;
+    color: #FF008E;
+    font-size: 20px;
+}
+/* Contact Section */
+.contact-side{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-photo img{
+    width: 90%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form input, textarea{
+    width: 100%;
+    outline: 0;
+    border: 1.5px solid #FF008E;
+    display: flex;
+    margin: 20px 0px;
+    font-family: inherit;
+}
+form [placeholder]{
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* footer */
+footer p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+.creator{
+    text-decoration: none;
+    color: tomato;
+}
+.fa-heart{
+    width: 2%;
+    color: #FF008E;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+/* 
+=====================
+Responsive
+===================== 
+*/
+
+@media only screen and (max-width:688px) {
+
+    /* hader */
+    header{
+        height: 100%;
+        padding: 10px 0px;
+    }
+    .navigation{
+        display: flex;
+        align-items: center;
+    }
+    ul{
+        display: none;
+    }
+    i.fas.fa-bars {
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .top-left-part h1{
+        font-size: 35px;
+    }
+    .top-part{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-left-part, .top-right-part{
+        width: 100%;
+    }
+    .top-right-part{
+        order: 1;
+    }
+    .top-left-part{
+        order: 2;
+    }
+
+    /* feature section */
+    .f-bg-photo{
+        background-image: none;
+    }
+    .feature-cards{
+        background-image: none;
+        grid-template-columns: repeat(1, 300px);
+        gap: 50px;
+    }
+
+    /* about section */
+    .about-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-photo img{
+        width: 100%;
+    }
+
+    /* gallery section */
+    .images-cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .more {
+        text-align: right;
+        padding: 10px 114px;
+    }
+    /* contact section */
+    .contact-photo{
+        margin: 20px 0px;
+    }
+    .contact-side{
+        display: flex;
+        flex-direction: column;
+    }
+    /* footer */
+    .fa-heart {
+        padding: 10px 30px;
+    }
+
+
+    
+}
